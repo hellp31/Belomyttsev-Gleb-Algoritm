@@ -6,3 +6,5 @@
    <i> 3.Python(на начальном уровне)</i><p>
   <h2><i><b> Лекция:</b></i></h2><p>
 https://docs.google.com/document/d/15an777BttT0rpm53qRDlBUi9hspnhqT_Uu63juv0Erk/edit?usp=sharing
+
+оаововлыядаыоялб.  мзм
