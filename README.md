@@ -11,3 +11,4 @@ https://freelance.habr.com/freelancers/hellp34
 
 https://replit.com/@glebchik-2006<br>
 доска:[https://mogu.so/board/38ye2ud5DnYllZgoKzo24M#](https://mogu.so/inviteLink?inviteBoardId=5UDBR4EptcjNgpfVKJbvpl&inviteCode=2J1wS7XHoWYWI1yRwHlji0)https://mogu.so/inviteLink?inviteBoardId=5UDBR4EptcjNgpfVKJbvpl&inviteCode=2J1wS7XHoWYWI1yRwHlji0
+Практика:https://drive.google.com/drive/folders/1cNoREZGjLfe6rQPQ1V6gkA5THtQrLv5N
