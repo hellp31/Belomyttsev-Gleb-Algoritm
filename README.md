@@ -17,4 +17,4 @@ https://replit.com/@glebchik-2006<br>
 <br>
 Численные методы: https://drive.google.com/drive/folders/1w1iDj0iKvM_3evNG5PJxUk2sn7exTQCx?usp=sharing
 <br>
-https://replit.com/@glebchik-2006
+Replit: https://replit.com/@glebchik-2006
