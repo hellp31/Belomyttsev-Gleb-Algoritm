@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-03-05T14:55:14.655Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0 (Edition Yx GX)" etag="L7QwuFLjydnU8StNGxoG" version="24.0.1" type="github">
+  <diagram name="Страница — 1" id="GSZyPWIFoDVMFUtlGvcR">
+    <mxGraphModel dx="1161" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ogJeMrSGwG7mZXmuEI6v-1" target="ogJeMrSGwG7mZXmuEI6v-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-1" value="Ввод данных&amp;nbsp; inp&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ogJeMrSGwG7mZXmuEI6v-7" target="ogJeMrSGwG7mZXmuEI6v-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-7" value="разделяем inp с помощью&lt;div&gt;inp = inp.split()&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ogJeMrSGwG7mZXmuEI6v-9" target="ogJeMrSGwG7mZXmuEI6v-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-9" value="сортеруем inp с помощью&lt;div&gt;функции sorted&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ogJeMrSGwG7mZXmuEI6v-11" target="ogJeMrSGwG7mZXmuEI6v-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-11" value="&lt;div&gt;в аргумент вводим&amp;nbsp; функцию posi и делаем слова в нижним регистре&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ogJeMrSGwG7mZXmuEI6v-15" target="ogJeMrSGwG7mZXmuEI6v-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-15" value="в функцию posi пишем цикл который проверяет буквы на гласность&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ogJeMrSGwG7mZXmuEI6v-17" value="после этой функции пишем цикл word, который выводит слова в нижнем регистре&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="510" width="140" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
