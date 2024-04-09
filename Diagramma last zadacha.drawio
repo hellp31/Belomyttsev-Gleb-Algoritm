@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2024-04-09T12:33:10.573Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0 (Edition Yx GX)" etag="TGIhuTm6QDpVOwGy4hI5" version="24.0.7" type="github">
+  <diagram name="Страница — 1" id="_upwlA8mfIHdITfHc2nm">
+    <mxGraphModel dx="1393" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JAXviO7n0gj8uLwgkm0j-1" target="JAXviO7n0gj8uLwgkm0j-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-1" value="Вводим m и n&lt;div&gt;m = int(input(&#39;Введите размер комнаты: &#39;))&lt;br&gt;&lt;/div&gt;&lt;div&gt;n = int(input(&quot;Введите количество числовых показателей: &quot;))&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="90" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JAXviO7n0gj8uLwgkm0j-2" target="JAXviO7n0gj8uLwgkm0j-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-2" value="Если положительные" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JAXviO7n0gj8uLwgkm0j-4" target="JAXviO7n0gj8uLwgkm0j-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-4" value="Если отрицательные" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JAXviO7n0gj8uLwgkm0j-6" target="JAXviO7n0gj8uLwgkm0j-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JAXviO7n0gj8uLwgkm0j-6" target="JAXviO7n0gj8uLwgkm0j-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-6" value="Проверка на положительность чисел&lt;div&gt;if n &amp;gt; 0 and m &amp;gt; 0:&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="190" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-10" value="print(&#39;Ошибка&#39;)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JAXviO7n0gj8uLwgkm0j-12" target="JAXviO7n0gj8uLwgkm0j-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-12" value="Задаем списки и переменные&lt;div&gt;pokaz = [] -Список для хранения числовых показателей&lt;br&gt;&lt;/div&gt;&lt;div&gt;proiz = [] -&amp;nbsp;Список для хранения произведений&lt;br&gt;&lt;/div&gt;&lt;div&gt;-----------------------------------------------------------&lt;/div&gt;&lt;div&gt;Переменные для хранения результатов&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;res1 = 0&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;res2 = 0&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; max_proiz = 0&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="470" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JAXviO7n0gj8uLwgkm0j-16" value="Заполнение списка pokaz" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="700" width="200" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
