@@ -1,9 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2024-04-19T07:19:04.356Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" version="24.0.7" etag="r-fV_Wbuuv8tXimmve_M" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-19T07:50:24.936Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" etag="RNR12IHK69_F_ehZcsJk" version="24.0.7" type="github">
   <diagram name="Страница — 1" id="lH-rpbXD0j_LP4CC0iqp">
-    <mxGraphModel>
+    <mxGraphModel dx="1936" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="B1PglatZ0dOJUK7AH1xp-1" target="B1PglatZ0dOJUK7AH1xp-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="180" width="1500" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-3" value="&lt;div style=&quot;&quot;&gt;&lt;p class=&quot;MsoNormal&quot;&gt;определяет структуру данных для моделирования космического&lt;br/&gt;корабля. Он содержит атрибуты для хранения содержимого кают и трюмов,&lt;br/&gt;идентификаторов содержимого и вида корабля.&lt;/p&gt;&lt;/div&gt;class SpaceShip:" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="231" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-4" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;__init__(self, contents, id_list, ship_type):&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;self.contents = contents&amp;nbsp; # Список содержимого кают и трюмов&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; self.id_list = id_list&amp;nbsp; # Список идентификаторов содержимого&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; self.ship_type = ship_type&amp;nbsp; # Вид корабля&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="380" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-5" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;используется для создания строкового представления объекта SpaceShip.&lt;br/&gt;Это позволяет выводить информацию о корабле в удобном формате.&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;__str__(self):&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="495" width="270" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-6" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;возвращает список содержимого кают и трюмов.&lt;/p&gt;&lt;/div&gt;values(self):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="639.5" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-7" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;возвращает вид корабля.&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;rang(self)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-8" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;позволяет устанавливать значение по индексу.&lt;/p&gt;&lt;/div&gt;__setitem__(self, i, value):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="392.5" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-9" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;используется для повышения вида корабля на указанное&lt;br/&gt;количество позиций в алфавите.&lt;/p&gt;&lt;/div&gt;__add__(self, value)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="492.5" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-10" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;удаляет элемент из списка содержимого по индексу.&lt;/p&gt;&lt;/div&gt;deli(self, i)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="520" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-11" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;добавляет элемент в конец списка содержимого.&lt;/p&gt;&lt;/div&gt;&amp;nbsp;app(self, value)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="650" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-12" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;позволяет получать значение по индексу.&lt;/p&gt;&lt;/div&gt;__getitem__(self, i)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="660" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-13" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;возвращает длину списка содержимого.&lt;/p&gt;&lt;/div&gt;__len__(self):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="400" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-14" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;сравнивает два объекта SpaceShip на равенство.&lt;/p&gt;&lt;/div&gt;&amp;nbsp;__eq__(self, other):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="640" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-15" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;проверяет наличие элемента в списке содержимого.&lt;/p&gt;&lt;/div&gt;__contains__(self, item):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="520" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-16" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;сравнивает два объекта SpaceShip на больше.&lt;/p&gt;&lt;/div&gt;&amp;nbsp;__gt__(self, other):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="392.5" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-17" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;сравнивает два объекта SpaceShip на неравенство.&lt;/p&gt;&lt;/div&gt;__ne__(self, other):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="639.5" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-18" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;сравнивает два объекта SpaceShip на меньше.&lt;/p&gt;&lt;/div&gt;&amp;nbsp;__lt__(self, other):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="520" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-19" value="&lt;div&gt;&lt;p class=&quot;MsoNormal&quot;&gt;используется для получения минимального значения с начала&lt;br/&gt;списка и до указанного индекса.&lt;/p&gt;&lt;/div&gt;__call__(self, x):" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="450" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="B1PglatZ0dOJUK7AH1xp-20" value="Выводим то, что нужно&lt;div&gt;&lt;div&gt;space_ship = SpaceShip([1, 2, 3], [4, 5, 6], &#39;A&#39;)&lt;/div&gt;&lt;div&gt;print(space_ship)&lt;/div&gt;&lt;div&gt;try:&lt;/div&gt;&lt;div&gt;&amp;nbsp; space_ship[0] = 100&amp;nbsp; # Замена значения&lt;/div&gt;&lt;div&gt;except IndexError as e:&lt;/div&gt;&lt;div&gt;&amp;nbsp; print(e)&lt;/div&gt;&lt;div&gt;print(space_ship)&lt;/div&gt;&lt;div&gt;space_ship.app(200)&amp;nbsp; &amp;nbsp;# Добавление значения&lt;/div&gt;&lt;div&gt;print(space_ship)&lt;/div&gt;&lt;div&gt;space_ship.deli(1)&amp;nbsp; &amp;nbsp; # Удаление значения&lt;/div&gt;&lt;div&gt;print(space_ship)&lt;/div&gt;&lt;div&gt;print(&#39;A&#39; in space_ship)&amp;nbsp; # Проверка наличия значения&lt;/div&gt;&lt;div&gt;print(space_ship(0))&amp;nbsp; # Получение минимального значения&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="840" width="390" height="290" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
