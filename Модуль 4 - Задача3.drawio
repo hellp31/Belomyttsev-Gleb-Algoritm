@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2024-04-19T07:30:03.768Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" etag="bGGbhoRx5HpypXb7MumL" version="22.1.21" type="google">
+  <diagram name="Страница — 1" id="7IbMPZarZWCDiNHFcYJW">
+    <mxGraphModel dx="792" dy="452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mD3795NkdqUObsMbdBPr-1" value="&lt;div&gt;import json&lt;/div&gt;&lt;div&gt;import csv&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="110" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-2" value="&lt;div&gt;Этот код смотрит данные в файле &quot;in.json&quot;, и загружает их&lt;/div&gt;&lt;div&gt;with open(&#39;in.json&#39;, &#39;r&#39;, encoding=&#39;utf-8&#39;) as file:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; data = json.load(file)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mD3795NkdqUObsMbdBPr-1" target="mD3795NkdqUObsMbdBPr-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="290" as="sourcePoint" />
+            <mxPoint x="470" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-4" value="Фильтруем данные и оставляем только те у которых &quot;проявление&quot; меньше 2&amp;nbsp;&lt;br&gt;filtered_data = [item for item in data if item[&#39;проявление&#39;] &amp;lt;= 2]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="340" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-5" value="Сортируем по убыванию по строкам &quot;вредность&quot; и &quot;привычка&quot;&lt;br&gt;sorted_data = sorted(filtered_data, key=lambda x: (-x[&#39;вредность&#39;], x[&#39;привычка&#39;]))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="460" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-6" value="Открываем файл &#39;out.csv&#39;&lt;br&gt;with open(&#39;out.csv&#39;, &#39;w&#39;, newline=&#39;&#39;, encoding=&#39;utf-8&#39;) as file:" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="460" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-7" value="&lt;div&gt;Записываем данные с разделительным знаком &quot;;&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; writer = csv.writer(file, delimiter=&#39;;&#39;)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; writer.writerow([&#39;номер&#39;, &#39;привычка&#39;, &#39;вредность&#39;, &#39;проявление&#39;, &#39;длительность&#39;])&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="330" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-10" value="&lt;div&gt;Выводим полученную в прошлом шаге строчку&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; for i, item in enumerate(sorted_data, start=1):&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; writer.writerow([i, item[&#39;привычка&#39;], item[&#39;вредность&#39;], item[&#39;проявление&#39;], item[&#39;длительность&#39;]])&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="210" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mD3795NkdqUObsMbdBPr-2" target="mD3795NkdqUObsMbdBPr-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="380" as="sourcePoint" />
+            <mxPoint x="640" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mD3795NkdqUObsMbdBPr-4" target="mD3795NkdqUObsMbdBPr-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="380" as="sourcePoint" />
+            <mxPoint x="640" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mD3795NkdqUObsMbdBPr-5" target="mD3795NkdqUObsMbdBPr-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="380" as="sourcePoint" />
+            <mxPoint x="640" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mD3795NkdqUObsMbdBPr-6" target="mD3795NkdqUObsMbdBPr-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="380" as="sourcePoint" />
+            <mxPoint x="640" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mD3795NkdqUObsMbdBPr-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mD3795NkdqUObsMbdBPr-7" target="mD3795NkdqUObsMbdBPr-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="380" as="sourcePoint" />
+            <mxPoint x="640" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

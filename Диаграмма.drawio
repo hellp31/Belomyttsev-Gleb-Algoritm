@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" modified="2024-04-19T07:43:58.483Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="bdfOq0dZn3yEFgKNbsu3" version="22.1.21" type="google">
+  <diagram name="Страница — 1" id="JXGnWFy1PrDAFHaWlhB1">
+    <mxGraphModel dx="1050" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OFJejFghI2u8dhaGEpWS-1" value="Получаем время для таймера&lt;br&gt;&lt;div&gt;user_input = input(&quot;Введите время в формате часы:минуты:секунды: &quot;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290.75" y="50" width="259.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-2" value="Преобразуем полученное время в формат time&lt;br&gt;&lt;div&gt;time_interval = datetime.datetime.strptime(user_input, &#39;%H:%M:%S&#39;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="291" y="160" width="259" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-3" value="" style="endArrow=none;html=1;rounded=0;" parent="1" source="OFJejFghI2u8dhaGEpWS-2" target="OFJejFghI2u8dhaGEpWS-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-4" value="Вычисляем время, в которое нужно сообщить об отдыхе&lt;br&gt;timer_time = current_time + datetime.timedelta(hours=time_interval.hour, minutes=time_interval.minute, seconds=time_interval.second)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="303.5" y="320" width="234" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-5" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="OFJejFghI2u8dhaGEpWS-4" target="OFJejFghI2u8dhaGEpWS-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-6" value="Нужное время наступило?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365.75" y="550" width="109.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-8" value="Проверяем настоящее время&lt;br&gt;&amp;nbsp; &amp;nbsp;current_time = datetime.datetime.now()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340.75" y="460" width="159.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-9" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="OFJejFghI2u8dhaGEpWS-8" target="OFJejFghI2u8dhaGEpWS-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="500" as="sourcePoint" />
+            <mxPoint x="440" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="OFJejFghI2u8dhaGEpWS-6" target="OFJejFghI2u8dhaGEpWS-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="421" y="550" as="sourcePoint" />
+            <mxPoint x="440" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-11" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="OFJejFghI2u8dhaGEpWS-6" target="OFJejFghI2u8dhaGEpWS-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="580" as="sourcePoint" />
+            <mxPoint x="440" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-12" value="нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OFJejFghI2u8dhaGEpWS-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.473" y="-2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-14" value="Запустить музычку&lt;br&gt;playsound.playsound(&#39;sound.mp3&#39;, block=True)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="315.75" y="700" width="209.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="OFJejFghI2u8dhaGEpWS-14" target="OFJejFghI2u8dhaGEpWS-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="700" as="sourcePoint" />
+            <mxPoint x="440" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OFJejFghI2u8dhaGEpWS-16" value="да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OFJejFghI2u8dhaGEpWS-15" vertex="1" connectable="0">
+          <mxGeometry x="-0.1333" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
