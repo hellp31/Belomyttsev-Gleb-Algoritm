@@ -1,9 +1,39 @@
-<mxfile host="app.diagrams.net" modified="2024-04-19T07:51:29.368Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" version="24.0.7" etag="crdkNBatzZfvqkt28p5Q" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-19T08:02:11.894Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" etag="uFHKmbq4xa30wgQjpAvG" version="24.0.7" type="github">
   <diagram name="Страница — 1" id="GD7uC92XmZBLLAkwRBsY">
-    <mxGraphModel>
+    <mxGraphModel dx="956" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-1" value="from PIL import Image, ImageDraw&lt;div&gt;импорт рисовалки&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="290" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x_lbw6wQn-XA1NS4T1O2-5" target="x_lbw6wQn-XA1NS4T1O2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-5" value="class Planet:&lt;div&gt;создали класс планеты&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-6" value="__init__(self, img):&lt;div&gt;добавляем картинку&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x_lbw6wQn-XA1NS4T1O2-7" target="x_lbw6wQn-XA1NS4T1O2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-7" value="&lt;p class=&quot;MsoNormal&quot;&gt;&amp;nbsp;orbit(self, xywh, fill):&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;метод класса Planet, который рисует орбиту и планеты на&lt;br/&gt;изображении. Аргументы xywh - это координаты и размеры области, где будет&lt;br/&gt;рисоваться орбита, а fill - это кортеж с цветами для планеты Бетта, планеты&lt;br/&gt;Альфа и линии орбиты.&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="340" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-8" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="x_lbw6wQn-XA1NS4T1O2-5" target="x_lbw6wQn-XA1NS4T1O2-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="320" as="sourcePoint" />
+            <mxPoint x="630" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_lbw6wQn-XA1NS4T1O2-10" value="&lt;div&gt;вывод&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;img = Image.new(&#39;RGB&#39;, (200, 200), &#39;#000000&#39;)&lt;/div&gt;&lt;div&gt;drw = Planet(img)&lt;/div&gt;&lt;div&gt;drw.orbit((0, 0, 160, 120), (&#39;#ffffff&#39;, &#39;#dddddd&#39;, &#39;#999999&#39;))&lt;/div&gt;&lt;div&gt;img.save(&#39;result.png&#39;)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="392" y="494.5" width="306" height="180" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
